@@ -5,7 +5,7 @@ to install dependencies run the command:
         pip install opencv-python mediapipe pygame
 
 How to play: 
-Run the game: python main.py
+Run the game: python twoplayerversion.py
 
 Menu: slice your finger over the buttons to select 1 Player or 2 Player mode.
 
