@@ -45,8 +45,8 @@ bomb_sound.set_volume(0.8)
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(
     max_num_hands=1,
-    min_detection_confidence=0.70,
-    min_tracking_confidence=0.70
+    min_detection_confidence=0.50,
+    min_tracking_confidence=0.50
 )
 
 # ===============================
