@@ -5,7 +5,10 @@ import math
 import time
 import pygame
 from collections import deque
-
+# ===============================
+# PLAYER NAME
+# ===============================
+js = input("Enter your name: ")
 # ===============================
 # CONFIGURATION
 # ===============================
@@ -295,6 +298,14 @@ while True:
         break
     if key == ord('r') and state["game_over"]:
         state = reset_game()
+
+
+# ===============================
+# SAVE SCORE
+# ===============================
+with open("name&scores.txt", "a") as file:
+    file.write(f"{js} : {state['score']}\n")
+
 
 cap.release()
 cv.destroyAllWindows()
